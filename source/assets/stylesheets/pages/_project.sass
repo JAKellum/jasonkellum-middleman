@@ -1,0 +1,160 @@
+section.m-project-layout
+  .wrapper
+    +row
+    +outer-container
+    +desktop
+      +rem(padding-top, 0px)
+      +rem(padding-right, 20px)
+      +rem(padding-bottom, 0px)
+      +rem(padding-left, 20px)
+    article
+      .coming-soon
+        +rem(padding-top, 75px)
+        +rem(padding-right, 0px)
+        +rem(padding-bottom, 50px)
+        +rem(padding-left, 0px)
+        position: absolute
+        top: 40%
+        bottom: 0
+        right: 0
+        left: 0
+        h3, h5, p
+          text-align: center
+      &.intro
+        +span-columns(12)
+        +rem(padding-top, 150px)
+        +rem(padding-bottom, 100px)
+        +tablet
+          +rem(padding-top, 0px)
+          +rem(padding-bottom, 0px)
+        .item-text
+          +span-columns(4)
+          +rem(padding-top, 100px)
+          +rem(padding-right, 40px)
+          +tablet
+            +span-columns(12)
+            +rem(padding-right, 0px)
+          h5
+            +rem(padding-top, 0px)
+        .item-image
+          +span-columns(8)
+          +tablet
+            +span-columns(12)
+            +rem(padding-top, 50px)
+            +rem(margin-bottom, 50px)
+      &.image
+        +span-columns(12)
+        +rem(margin-top, 0px)
+        +rem(margin-right, 0px)
+        +rem(margin-bottom, 50px)
+        +rem(margin-left, 0px)
+        .item-image
+          +span-columns(7)
+          img
+            display: block
+            margin: 0 auto
+            box-shadow: rem(5) rem(5) rem(5) lighten($gray, 60%)
+          +tablet
+            +span-columns(7)
+          +mobile
+            +span-columns(12)
+          .desk
+            display: inherit
+            +tablet
+              display: none
+          .tab
+            display: none
+            +tablet
+              display: inherit
+            +mobile
+              display: none
+          .mob
+            display: none
+            +mobile
+              display: inherit
+        .item-text
+          +span-columns(5)
+          +rem(padding-top, 100px)
+          +rem(padding-left, 40px)
+          +tablet
+            +span-columns(5)
+          +mobile
+            +span-columns(12)
+            +rem(padding-top, 0px)
+            +rem(padding-left, 0px)
+          select
+            +rem(margin-top, 20px)
+          h3
+            +rem(padding-top, 20px)
+            +rem(padding-bottom, 20px)
+      &.tablet
+        +span-columns(12)
+        +rem(padding-bottom, 75px)
+        .item-text
+          +span-columns(5)
+          +rem(padding-top, 200px)
+          +tablet
+            +span-columns(12)
+            +rem(padding-top, 0px)
+          h3
+            +rem(padding-top, 20px)
+            +rem(padding-bottom, 15px)
+        .item-image
+          +span-columns(7)
+          +tablet
+            +span-columns(12)
+      &.phone
+        +span-columns(12)
+        +rem(padding-bottom, 40px)
+        .item-text
+          +span-columns(5)
+          +rem(padding-top, 250px)
+          +tablet
+            +span-columns(6)
+          +mobile
+            +span-columns(12)
+            +rem(padding-top, 0px)
+          h3
+            +rem(padding-top, 20px)
+            +rem(padding-bottom, 15px)
+        .item-image
+          +span-columns(5)
+          +shift(2)
+          +tablet
+            +span-columns(6)
+            +shift(0)
+            +rem(padding-top, 75px)
+          +mobile
+            +span-columns(10)
+            +shift(1)
+      &.compare
+        +span-columns(12)
+        +rem(padding-bottom, 40px)
+        .item-image
+          +span-columns(6)
+          +mobile
+            +span-columns(12)
+          select
+            +span-columns(6)
+            +shift(3)
+            +mobile
+              +span-columns(12)
+              +shift(0)
+            option
+              +font-size($base-font-size * 1.75)
+              text-align: center
+          img
+            +span-columns(8)
+            +shift(2)
+            padding: 0 !important
+            box-shadow: rem(5) rem(5) rem(5) lighten($gray, 60%)
+            +tablet
+              +span-columns(12)
+              +shift(0)
+          h5
+            +rem(padding-bottom, 20px)
+            text-align: center
+          &:nth-of-type(1)
+            display: inherit
+            +mobile
+              display: none

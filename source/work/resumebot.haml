@@ -1,0 +1,43 @@
+%section.resumebot.m-project-layout
+  .wrapper.m-page.scene_element.scene_element--fadeinright
+    %article.intro
+      .item-text
+        %h2 R&eacute;sum&eacute;Bot
+        %h5 Format r&eacute;sum&eacute;s faster
+        %p
+          %a{:href => "http://www.resumebot.io/", :target => "_blank"}R&eacute;sum&eacute;Bot
+          is a tool to help recruiters format resumes faster. Tasks like organizing content, adding bullets, and styling text are automated and completed within seconds.
+        %p The concept for this promotional t-shirt was to represent the animation of consuming a resume, while keeping it on a printed medium; changing expressions as you read the text.
+        %cite
+          %ul
+            %li
+              Branding:
+              %a{:href => "http://www.daniloquilaton.com/", :target => "_blank"}Danilo Quilaton
+            %li
+              Design:
+              %a{:href => "/"}Jason Kellum
+      .item-image
+        = image_tag('work/resumebot-shirt.png', {:alt => 'T-shirt'})
+    %article.image
+      .item-image.resumebot-toggle
+        .resumebot-one
+          = image_tag('work/resumebot-intro.jpg', {:alt => 'Intro'})
+        .resumebot-two.hide
+          = image_tag('work/resumebot-faq.jpg', {:alt => 'FAQ'})
+      .item-text
+        %h3 PDF Support Resources
+        %p
+          While at
+          %a{:href => "http://www.ignitewithus.com/", :target => "_blank"}Ignite
+          we place an emphasis on improving the recruiter environment through digital means, there is and may always be, a need for printed materials. These 8&frac12; x 11 printouts were created to provide additional R&eacute;sum&eacute;Bot support resources for business units acquiring how to use this tool.
+        %cite
+          %ul
+            %li
+              Content:
+              %a{:href => "http://www.acqylla.com/"}Jen Hyde
+            %li
+              Design:
+              %a{:href => "/"}Jason Kellum
+        %select.div-toggler{'data-target' => '.resumebot-toggle'}
+          %option{'data-show' => '.resumebot-one', :value => 'resumebot-one'} Introduction One-Pager
+          %option{'data-show' => '.resumebot-two', :value => 'resumebot-two'}  FAQ One-Pager

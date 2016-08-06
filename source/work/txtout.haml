@@ -1,0 +1,61 @@
+%section.txtout.m-project-layout
+  .wrapper.m-page.scene_element.scene_element--fadeinright
+    %article.intro
+      .item-text
+        %h2 TxtOut
+        %h5 Attendance Tracking Tool
+        %p
+          Created to relieve a business pain-point,
+          %a{:href => "http://www.ignitewithus.com/products/txtout", :target => "_blank"}TxtOut
+          replaced an outdated voice-mail center used by Nike and Ebay manufacturing warehouses.
+        %p Associates can call-out and, for the first time, text-out tardy or absent. For the staffing agency, it frees associates from manually transcribing voicemails and provides them with searchable, digital attendance reports.
+        %cite
+          %ul
+            %li
+              Content:
+              %a{:href => "http://www.acqylla.com/", :target => "_blank"}Jen Hyde
+            %li
+              Design &plus; Front-end:
+              %a{:href => "/"}Jason Kellum
+            %li
+              Development:
+              %a{:href => "https://www.linkedin.com/pub/mark-montroy/3/168/841", :target => "_blank"}Mark Montroy
+      .item-image
+        = image_tag('work/txtout-devices.gif', {:alt => 'Devices'})
+    %article.image
+      .item-image.txtout-toggle
+        .txtout-one
+          .desk
+            = image_tag('work/txtout-dash-desktop.jpg', {:alt => 'Dashboard'})
+          .tab
+            = image_tag('work/txtout-dash-tablet.jpg', {:alt => 'Dashboard'})
+          .mob
+            = image_tag('work/txtout-dash-mobile.jpg', {:alt => 'Dashboard'})
+        .txtout-two.hide
+          .desk
+            = image_tag('work/txtout-admin-desktop.jpg', {:alt => 'Admin'})
+          .tab
+            = image_tag('work/txtout-admin-tablet.jpg', {:alt => 'Admin'})
+          .mob
+            = image_tag('work/txtout-admin-mobile.jpg', {:alt => 'Admin'})
+        .txtout-three.hide
+          .desk
+            = image_tag('work/txtout-login-desktop.jpg', {:alt => 'Login'})
+          .tab
+            = image_tag('work/txtout-login-tablet.jpg', {:alt => 'Login'})
+          .mob
+            = image_tag('work/txtout-login-mobile.jpg', {:alt => 'Login'})
+        .txtout-four.hide
+          .desk
+            = image_tag('work/txtout-forgotpw-desktop.jpg', {:alt => 'Forgot Password'})
+          .tab
+            = image_tag('work/txtout-forgotpw-tablet.jpg', {:alt => 'Forgot Password'})
+          .mob
+            = image_tag('work/txtout-forgotpw-mobile.jpg', {:alt => 'Forgot Password'})
+      .item-text
+        %h3 Admin Dashboard
+        %select.div-toggler{'data-target' => '.txtout-toggle'}
+          %option{'data-show' => '.txtout-one', :value => 'txtout-one'} Dashboard
+          %option{'data-show' => '.txtout-two', :value => 'txtout-two'} Admin
+          %option{'data-show' => '.txtout-three', :value => 'txtout-three'} Login
+          %option{'data-show' => '.txtout-four', :value => 'txtout-four'} Forgot Password

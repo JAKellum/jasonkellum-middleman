@@ -1,0 +1,56 @@
+section.m-resume-layout
+  .wrapper
+    +row
+    +outer-container
+    +desktop
+      +rem(padding-top, 0px)
+      +rem(padding-right, 20px)
+      +rem(padding-bottom, 0px)
+      +rem(padding-left, 20px)
+    article
+      +rem(margin, 0px)
+      +rem(padding-top, 50px)
+      +rem(padding-bottom, 50px)
+      +span-columns(9)
+      +shift(3)
+      +mobile
+        +span-columns(12)
+        +shift(0)
+      figure
+        +rem(margin-top, 0px)
+        +rem(margin-right, 0px)
+        +rem(margin-bottom, 50px)
+        +rem(margin-left, 0px)
+        h2
+          color: lighten($gray, 50%)
+        dl
+          +rem(margin-top, 0px)
+          +rem(margin-right, 0px)
+          +rem(margin-bottom, 40px)
+          +rem(margin-left, 0px)
+        ul
+          +rem(margin-bottom, 20px)
+        h6.v
+          +rem(bottom, 250px)
+          color: lighten($gray, 50%)
+          transform: rotate(-90deg)
+          position: fixed
+          right: 0
+          +mobile
+            transform: inherit
+            position: inherit
+            bottom: 0
+            right: 0
+    aside
+      width: 100%
+      padding-top: 0
+      position: fixed
+      top: 20%
+      right: 0
+      bottom: 0
+      left: 5%
+      +mobile
+        +rem(padding-top, 100px)
+        position: inherit
+      h2
+        color: lighten($gray, 50%)

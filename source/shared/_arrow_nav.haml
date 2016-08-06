@@ -1,0 +1,3 @@
+%a.ion-home{href: '/'}
+%a.ion-chevron-left{href: '/work/' + prev_page_of(current_page.path.match(/^work\/(.*)\.html$/)[1].to_sym)}
+%a.ion-chevron-right{href: '/work/' + next_page_of(current_page.path.match(/^work\/(.*)\.html$/)[1].to_sym)}

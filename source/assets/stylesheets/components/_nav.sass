@@ -1,0 +1,124 @@
+nav
+  +transition
+  position: fixed
+  width: 100%
+  top: 2.5%
+  z-index: 2000
+  .ion-chevron-left, .ion-chevron-right, .ion-home
+    margin-left: rem(20)
+    font-size: rem(24)
+    line-height: 1
+    color: lighten($gray, 50%)
+    z-index: 4000
+    &:hover
+      color: darken($red, 25%)
+.overlay
+  +display(flex)
+  +justify-content(center)
+  +align-items(center)
+  z-index: 1000
+  position: fixed
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  background: rgba($red, .9)
+  .ion-home
+    margin-left: 0
+  section
+    +animation(fadeIn 1s)
+    text-align: center
+    img
+      border-radius: 50%
+      max-width: rem(100)
+    h1, h2, h3, p
+      color: $white
+    h2
+      margin-top: rem(20)
+    a
+      color: lighten($gray, 50%)
+      &:hover
+        color: darken($red, 25%)
+    ul
+      display: inline-block
+      max-width: rem(300)
+      margin-top: rem(15)
+      li
+        +span-columns(4)
+        display: block
+        padding-bottom: rem(20)
+        i
+          +transition
+          font-size: rem(42)
+          color: lighten($gray, 50%)
+          &:hover
+            color: darken($red, 25%)
+
+// Hamburger CSS
+#nav-icon
+  float: right
+  margin-right: rem(20)
+  z-index: 2000
+  width: rem(30)
+  height: rem(20)
+  position: relative
+  -webkit-transform: rotate(0deg)
+  -moz-transform: rotate(0deg)
+  -o-transform: rotate(0deg)
+  transform: rotate(0deg)
+  -webkit-transition: .5s ease-in-out
+  -moz-transition: .5s ease-in-out
+  -o-transition: .5s ease-in-out
+  transition: .5s ease-in-out
+  cursor: pointer
+  &:hover span
+    background: darken($red, 25%)
+
+#nav-icon span
+  +opacity(1)
+  display: block
+  position: absolute
+  height: rem(3)
+  width: 100%
+  background: lighten($gray, 50%)
+  border-radius: rem(10)
+  left: 0
+  -webkit-transform: rotate(0deg)
+  -moz-transform: rotate(0deg)
+  -o-transform: rotate(0deg)
+  transform: rotate(0deg)
+  -webkit-transition: .25s ease-in-out
+  -moz-transition: .25s ease-in-out
+  -o-transition: .25s ease-in-out
+  transition: .25s ease-in-out
+
+#nav-icon span:nth-child(1)
+  top: 0
+
+#nav-icon span:nth-child(2),#nav-icon span:nth-child(3)
+  top: rem(9)
+
+#nav-icon span:nth-child(4)
+  top: rem(18)
+
+#nav-icon.open span:nth-child(1)
+  top: rem(18)
+  width: 0%
+  left: 50%
+
+#nav-icon.open span:nth-child(2)
+  -webkit-transform: rotate(45deg)
+  -moz-transform: rotate(45deg)
+  -o-transform: rotate(45deg)
+  transform: rotate(45deg)
+
+#nav-icon.open span:nth-child(3)
+  -webkit-transform: rotate(-45deg)
+  -moz-transform: rotate(-45deg)
+  -o-transform: rotate(-45deg)
+  transform: rotate(-45deg)
+
+#nav-icon.open span:nth-child(4)
+  top: rem(9)
+  width: 0%
+  left: 50%

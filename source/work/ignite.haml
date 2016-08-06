@@ -1,0 +1,97 @@
+%section.ignite.m-project-layout
+  .wrapper.m-page.scene_element.scene_element--fadeinright
+    %article.intro
+      .item-text
+        %h2 Ignite
+        %h5
+          Innovation lab for Adecco group
+        %p
+          %a{:href => "http://www.ignitewithus.com/", :target => "_blank"}Ignite
+          partners with
+          %a{:href => "http://www.adecco.com/", :target => "_blank"}Adecco
+          business units and sister companies to develop new technology that drives efficiency and bring new products to market that help people work.
+        %p
+          Our company was in need of a new marketing website that could better tell who we were and what we are about. So a team was assembled and we got to &mdash;
+          %i work.
+        %cite
+          %ul
+            %li
+              Design:
+              %a{:href => "http://www.katygarrison.com/", :target => "_blank"}Katy Garrison
+            %li
+              Content:
+              %a{:href => "http://www.acqylla.com/", :target => "_blank"}Jen Hyde
+            %li
+              Front-End:
+              %a{:href => "/"}Jason Kellum
+              &plus;
+              %a{:href => "http://www.daniloquilaton.com/", :target => "_blank"}Danilo Quilaton
+            %li
+              Videography & Photography:
+              %a{:href => "https://twitter.com/amberaultman", :target => "_blank"}Amber Aultman
+      .item-image
+        %video{ :id => "video", :loop => "true", :autoplay => "true", :poster => image_path('work/ignite-devices.jpg')}
+          %source{ :src => image_path('videos/ignite-devices.mp4'), :type => "video/mp4"}
+          %source{ :src => image_path('videos/ignite-devices.webm'), :type => "video/webm"}
+          = image_tag('work/ignite-devices.jpg', {:alt => 'Ignite homepage background video.'})
+    %article.image
+      .item-image.ignite-toggle
+        .ignite-one
+          .desk
+            = image_tag('work/ignite-home-desktop.jpg', {:alt => 'Homepage'})
+          .tab
+            = image_tag('work/ignite-home-tablet.jpg', {:alt => 'Homepage'})
+          .mob
+            = image_tag('work/ignite-home-mobile.jpg', {:alt => 'Homepage'})
+        .ignite-two.hide
+          .desk
+            = image_tag('work/ignite-selfies-desktop.jpg', {:alt => 'Selfies'})
+          .tab
+            = image_tag('work/ignite-selfies-tablet.jpg', {:alt => 'Selfies'})
+          .mob
+            = image_tag('work/ignite-selfies-mobile.jpg', {:alt => 'Selfies'})
+        .ignite-three.hide
+          .desk
+            = image_tag('work/ignite-jobs-desktop.jpg', {:alt => 'Jobs'})
+          .tab
+            = image_tag('work/ignite-jobs-tablet.jpg', {:alt => 'Jobs'})
+          .mob
+            = image_tag('work/ignite-jobs-mobile.jpg', {:alt => 'Jobs'})
+        .ignite-four.hide
+          .desk
+            = image_tag('work/ignite-login-desktop.jpg', {:alt => 'Login'})
+          .tab
+            = image_tag('work/ignite-login-tablet.jpg', {:alt => 'Login'})
+          .mob
+            = image_tag('work/ignite-login-mobile.jpg', {:alt => 'Login'})
+        .ignite-five.hide
+          .desk
+            = image_tag('work/ignite-resources-desktop.jpg', {:alt => 'Resources'})
+          .tab
+            = image_tag('work/ignite-resources-tablet.jpg', {:alt => 'Resources'})
+          .mob
+            = image_tag('work/ignite-resources-mobile.jpg', {:alt => 'Resources'})
+        .ignite-six.hide
+          .desk
+            = image_tag('work/ignite-contact-desktop.jpg', {:alt => 'Contact'})
+          .tab
+            = image_tag('work/ignite-contact-tablet.jpg', {:alt => 'Contact'})
+          .mob
+            = image_tag('work/ignite-contact-mobile.jpg', {:alt => 'Contact'})
+      .item-text
+        %h3 2015 Marketing Site
+        %p In just two years from Ignite's launch, we outgrew the capabilities that our previous one-page marketing website could provide. With a goal of raising brand awareness and increasing product adoption rate, we aimed to make more of our information and resources available online.
+        %p Since this wasn't one of the organization's prioritied products, our entire design team collaborated to meet the project deadlines. My role on the team was to build a great codebase that any of us could use and expand upon.
+        %select.div-toggler{'data-target' => '.ignite-toggle'}
+          %option{'data-show' => '.ignite-one', :value => 'ignite-one'} Homepage
+          %option{'data-show' => '.ignite-two', :value => 'ignite-two'} Selfies
+          %option{'data-show' => '.ignite-three', :value => 'ignite-three'} Jobs
+          %option{'data-show' => '.ignite-four', :value => 'ignite-four'} Login
+          %option{'data-show' => '.ignite-five', :value => 'ignite-five'} Resources
+          %option{'data-show' => '.ignite-six', :value => 'ignite-six'} Contact
+    %article.image
+      .item-image.toggle-view
+        = image_tag('work/ignite-atom.png', {:alt => 'Atom editor.'})
+      .item-text
+        %h3 Codebase
+        %p This Ruby on Rails project was built with HAML and SASS, running with Bourbon and Neat. I typically work split screen, allowing me to reference both my HTML and CSS or JS simultaneously. I've been using Atom as my text editor recently, as it runs nicely alongside Github's version management.

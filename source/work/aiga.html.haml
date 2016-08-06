@@ -1,0 +1,31 @@
+- content_for :nav_top do
+  = partial "shared/arrow_nav"
+
+%section.aiga.m-project-layout
+  .wrapper.m-page.scene_element.scene_element--fadeinright
+    %article.intro
+      .item-text
+        %h2 AIGA
+        %h5 Jacksonville Chapter Newsletter
+        %p Tasked with updating the monthly communications newsletter in 2015, the redesign brought forth a single-column modular layout, full-width images, bold new accent colors, and a vast reduction of text. Allowing it to act more as inspiration and a friendly upcoming event reminder, directing the audience to the website; where they can find full event details.
+      .item-image
+        = image_tag('work/aiga-devices.gif')
+    %article.compare
+      .item-image
+        %h5 2014
+        = image_tag('work/aiga-prior.jpg')
+      .item-image
+        %select.div-toggler{'data-target' => '.aiga-toggle'}
+          %option{'data-show' => '.aiga-post', :value => 'aiga-post'} 2015 Prototype
+          %option{'data-show' => '.aiga-jan', :value => 'aiga-jan'}  January 2015
+          %option{'data-show' => '.aiga-mar', :value => 'aiga-mar'}  March 2015
+          %option{'data-show' => '.aiga-apr', :value => 'aiga-apr'} April 2015
+        .aiga-toggle
+          .aiga-post
+            = image_tag('work/aiga-post.jpg')
+          .aiga-jan.hide
+            = image_tag('work/aiga-january.jpg')
+          .aiga-mar.hide
+            = image_tag('work/aiga-march.jpg')
+          .aiga-apr.hide
+            = image_tag('work/aiga-april.jpg')

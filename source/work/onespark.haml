@@ -1,0 +1,73 @@
+%section.onespark.m-project-layout
+  .wrapper.m-page.scene_element.scene_element--fadeinright
+    %article.intro
+      .item-text
+        %h2 One Spark
+        %h5 The World's Largest Crowdfunding Festival
+        %p
+          %a{:href => "http://onespark.com/", :target => "_blank"}One Spark
+          connects creators with the resources they need to bring their ideas to life through crowdfunding.
+        %p I had the opportunity to help redesign the 2016 dashboard and project application flow by creating experiences and designs that would give the brand a fresh visual update and better guide the user towards the actions they need to make, all while still sitting in well with existing UI elements and already defined processes.
+        %cite
+          %ul
+            %li
+              Design & Front-End:
+              %a{:href => "https://twitter.com/jasonakellum", :target => "_blank"}Jason Kellum
+            %li
+              Development:
+              %a{:href => "https://twitter.com/jasoncummings86", :target => "_blank"}Jason Cummings
+              &plus;
+              %a{:href => "http://cronfu.com/", :target => "_blank"}Jimmy Thai
+      .item-image
+        %video{ :id => "video", :loop => "true", :autoplay => "true", :poster => image_path('work/onespark-devices.jpg')}
+          %source{ :src => image_path('videos/onespark-devices.mp4'), :type => "video/mp4"}
+          %source{ :src => image_path('videos/onespark-devices.webm'), :type => "video/webm"}
+          = image_tag('work/onespark-devices.jpg', {:alt => 'One spark creator profiles.'})
+    %article.image
+      .item-image.onespark-toggle
+        .onespark-one
+          .desk
+            = image_tag('work/onespark-signin-desktop.jpg', {:alt => 'Sign In'})
+          .tab
+            = image_tag('work/onespark-signin-tablet.jpg', {:alt => 'Sign In'})
+          .mob
+            = image_tag('work/onespark-signin-mobile.jpg', {:alt => 'Sign In'})
+        .onespark-two.hide
+          .desk
+            = image_tag('work/onespark-register-desktop.jpg', {:alt => 'Register'})
+          .tab
+            = image_tag('work/onespark-register-tablet.jpg', {:alt => 'Register'})
+          .mob
+            = image_tag('work/onespark-register-mobile.jpg', {:alt => 'Register'})
+        .onespark-three.hide
+          .desk
+            = image_tag('work/onespark-forgotpw-desktop.jpg', {:alt => 'Forgot Password'})
+          .tab
+            = image_tag('work/onespark-forgotpw-tablet.jpg', {:alt => 'Forgot Password'})
+          .mob
+            = image_tag('work/onespark-forgotpw-mobile.jpg', {:alt => 'Forgot Password'})
+      .item-text
+        %h3 Authentication Pages
+        %p Since the authentication pages are some of the first opportunities to interact with our users, tackling these pages was the first line of business. We wanted to remove any barriers or unnecessary noise that could distract or prevent the user from accomplishing their only goal on these screens &mdash; to sign in.
+        %select.div-toggler{'data-target' => '.onespark-toggle'}
+          %option{'data-show' => '.onespark-one', :value => 'onespark-one'} Sign In
+          %option{'data-show' => '.onespark-two', :value => 'onespark-two'}  Register
+          %option{'data-show' => '.onespark-three', :value => 'onespark-three'}  Forgot Password
+    %article.image
+      .item-image.toggle-view
+        .desk
+          = image_tag('work/onespark-launchpad-desktop.jpg', {:alt => 'Launchpad'})
+        .tab
+          = image_tag('work/onespark-launchpad-tablet.jpg', {:alt => 'Launchpad'})
+        .mob
+          = image_tag('work/onespark-launchpad-mobile.jpg', {:alt => 'Launchpad'})
+      .item-text
+        %h3 Launchpad
+        %p One of the main sections of the site that needed reworking was the user launchpad. This is the first screen a user sees upon sign in and it has real estate for almost every major action a user can take in the app.
+        %p The layout for this page needed to work well with two different types of people, Contributors (those who donate to projects) and Creators (those who submit projects). That being said, content was organized by separating out items that are available to all users and items specific for Creators. The creator callout banner swaps out dynamically depending on which step of the process the creator is in.
+    %article.image
+      .item-image.toggle-view
+        = image_tag('work/onespark-profile-sketch.jpg', {:alt => 'Sketch Artboards'})
+      .item-text
+        %h3 Sketch artboards linked with Marvel
+        %p I've found that by having a working prototype of my designs, it allows me to better express my thoughts and ideas to company stakeholders. To present these and other concepts, I used Marvel's Sketch plugin to quickly send my working Sketch III artboards to my online MarvelApp prototype.

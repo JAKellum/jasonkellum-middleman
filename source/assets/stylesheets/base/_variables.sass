@@ -1,0 +1,60 @@
+// Fonts
+$CGL: 'CriqueGrotesk-Light', helvetica, sans-serif
+$CGR: 'CriqueGrotesk-Regular', helvetica, sans-serif
+$CGH: 'CriqueGrotesk-Heavy', helvetica, sans-serif
+$CGB: 'CriqueGrotesk-Bold', helvetica, sans-serif
+
+// Typography
+$base-font-family: $CGR
+$heading-font-family: $CGL
+
+// Font Sizes
+$base-font-size: 16px
+
+@function calculateRem($size)
+  $remSize: $size / $base-font-size
+  @return $remSize * 1rem
+
+=font-size($size)
+  font-size: $size
+  font-size: calculateRem($size)
+
+// REM Calc
+=rem($propertie, $value)
+  #{$propertie}: $value
+  #{$propertie}: calculateRem($value)
+
+// Line height
+$base-line-height: 1.5
+$heading-line-height: 1.2
+
+// Other Sizes
+$base-border-radius: rem(3)
+$base-spacing: $base-line-height * rem(1)
+$small-spacing: $base-spacing / 12
+$base-z-index: 0
+
+// Colors
+$white: #FFFFFF
+$black: #000000
+$gray: #5E5E5E
+$red: #C5202E
+
+// Font Colors
+$base-background-color: $white
+$base-font-color: darken($gray, 20%)
+$action-color: $red
+
+// Opacity
+=opacity($opacity)
+  opacity: $opacity
+  $opacity-ie: $opacity * 100
+  filter: alpha(opacity = $opacity-ie)
+
+// Border
+$base-border-color: lighten($gray, 60%)
+$base-border: rem(1) solid $base-border-color
+
+// Forms
+$form-box-shadow: inset 0 rem(1) rem(3) rgba($black, 0.06)
+$form-box-shadow-focus: $form-box-shadow, 0 0 rem(5) adjust-color($action-color, $lightness: -5%, $alpha: -0.3)

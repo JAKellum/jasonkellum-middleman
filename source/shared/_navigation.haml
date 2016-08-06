@@ -1,0 +1,33 @@
+%nav
+  = yield_content :nav_top
+  #nav-icon
+    %span
+    %span
+    %span
+    %span
+  .overlay{:style => 'display: none'}
+    %section
+      = image_tag('jason-aiga-200x200.jpg')
+      %h2 Jason Kellum
+      %p
+        UX / UI Designer @
+        %a{:href => 'http://www.ignitewithus.com', :target => '_blank'} Ignite
+      %ul
+        %li
+          %a{:href => '/'}
+            %i.ion-home
+        %li
+          %a{:href => '/resume'}
+            %i.ion-document-text
+        %li
+          %a{:href => 'mailto:jason.a.kellum@gmail.com'}
+            %i.ion-email
+        %li
+          %a{:href => 'https://www.linkedin.com/in/jasonkellum', :target => '_blank'}
+            %i.ion-social-linkedin
+        %li
+          %a{:href => 'https://twitter.com/jasonakellum', :target => '_blank'}
+            %i.ion-social-twitter
+        %li
+          %a{:href => 'https://github.com/jakellum', :target => '_blank'}
+            %i.ion-social-github

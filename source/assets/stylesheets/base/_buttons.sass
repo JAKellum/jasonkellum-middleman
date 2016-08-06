@@ -1,0 +1,56 @@
+#{$all-button-inputs}, .button,
+button
+  +appearance(none)
+  +transition
+  +rem(padding, 20px)
+  -webkit-font-smoothing: antialiased
+  background-color: $white
+  border-radius: 0
+  border: rem(2) lighten($gray, 50%) solid
+  color: lighten($gray, 50%)
+  cursor: pointer
+  display: inline-block
+  font-family: $heading-font-family
+  font-size: $base-font-size
+  font-weight: normal
+  line-height: 1
+  text-decoration: none
+  user-select: none
+  vertical-align: middle
+  white-space: nowrap
+  &:hover,
+  &:focus
+    background-color: darken($red, 15%)
+    border-color: darken($red, 15%)
+    color: #fff
+  &:disabled
+    +opacity(0.5)
+    cursor: not-allowed
+
+select
+  +rem(height, 30px)
+  +rem(margin-bottom, 25px)
+  +rem(border-radius, 5px)
+  border: rem(1) solid lighten($gray, 50%)
+  background-color: $white
+  outline: none
+  cursor: pointer
+  text-align: center
+  &.render
+    +span-columns(3)
+    +rem(height, 30px)
+    +rem(right, 20px)
+    +rem(bottom, 20px)
+    +rem(border-radius, 5px)
+    position: fixed
+    border: rem(1) solid lighten($gray, 50%)
+    background-color: $white
+    outline: none
+    cursor: pointer
+    text-align: center
+    color: lighten($gray, 50%)
+    +mobile
+      +span-columns(11)
+    option
+      +font-size($base-font-size * 1.75)
+      text-align: center

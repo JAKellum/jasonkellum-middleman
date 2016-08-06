@@ -1,0 +1,60 @@
+// Keyframes
++keyframes(fadeIn)
+  from
+    +opacity(0)
+  to
+    +opacity(1)
+
++keyframes(fadeInUp)
+  0%
+    +opacity(0)
+    transform: translate3d(0, 100%, 0)
+  100%
+    +opacity(1)
+    transform: none
+
++keyframes(fadeInRight)
+  0%
+    +opacity(0)
+    transform: translate3d(100%, 0, 0)
+  100%
+    +opacity(1)
+    transform: none
+
++keyframes(fadeInDown)
+  0%
+    +opacity(0)
+    transform: translate3d(0, -100%, 0)
+  100%
+    +opacity(1)
+    transform: none
+
++keyframes(fadeInLeft)
+  0%
+    +opacity(0)
+    transform: translate3d(-100%, 0, 0)
+  100%
+    +opacity(1)
+    transform: none
+
+
+
+// Page Transitions
+.m-scene
+  .scene_element
+    animation-duration: .25s
+    transition-timing-function: ease-in
+    animation-fill-mode: both
+  .scene_element--fadein
+    animation-name: fadeIn
+  .scene_element--fadeinup
+    animation-name: fadeInUp
+  .scene_element--fadeinright
+    animation-name: fadeInRight
+  .scene_element--fadeindown
+    animation-name: fadeInDown
+  .scene_element--fadeinleft
+    animation-name: fadeInLeft
+  &.is-exiting
+    .scene_element
+      animation-direction: alternate-reverse

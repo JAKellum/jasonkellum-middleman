@@ -1,0 +1,49 @@
+%section.m-project-layout
+  .wrapper.m-page.scene_element.scene_element--fadeinright
+    %article.intro
+      .item-text
+        %h2 Catalyst
+        %h5 Innovation Workshops
+        -# %p
+        -#   Content needed
+        %cite
+          %ul
+            %li
+              Design:
+              %a{:href => "http://www.katygarrison.com/", :target => "_blank"}Katy Garrison
+            %li
+              Content:
+              %a{:href => "http://www.acqylla.com/", :target => "_blank"}Jen Hyde
+            %li
+              Front-End & Videography:
+              %a{:href => "/"}Jason Kellum
+      .item-image
+        = image_tag('work/catalyst-devices.gif')
+    %article.image
+      .item-image
+        %video{ :id => "video", :loop => "true", :autoplay => "true", :poster => image_path('catalyst-poster.jpg')}
+          %source{ :src => image_path('videos/catalyst-intro.mp4'), :type => "video/mp4"}
+          %source{ :src => image_path('videos/catalyst-intro.webm'), :type => "video/webm"}
+          %img{ :src => image_tag('catalyst-intro.jpg')}
+      .item-text
+        %h3 Background Video
+    %article.image
+      .item-image.toggle-view
+        .desk
+          = image_tag('work/catalyst-home-desktop.jpg')
+        .tab
+          = image_tag('work/catalyst-home-tablet.jpg')
+        .mob
+          = image_tag('work/catalyst-home-mobile.jpg')
+      .item-text
+        %h3 Homepage
+    %article.image
+      .item-image.toggle-view
+        .desk
+          = image_tag('work/catalyst-form-desktop.jpg')
+        .tab
+          = image_tag('work/catalyst-form-tablet.jpg')
+        .mob
+          = image_tag('work/catalyst-form-mobile.jpg')
+      .item-text
+        %h3 Forms

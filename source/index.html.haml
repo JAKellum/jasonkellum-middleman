@@ -1,11 +1,5 @@
----
-title: Page Title
----
-
-.delete-me
-  .container
-    %h1 thoughtbot Middleman Starter
-    %p
-      You're all set!
-      <a href="http://github.com/thoughtbot/proteus-middleman">Let's get started</a>
-      building your prototype.
+%section.m-home-layout
+  %ul.m-list.scene_element.scene_element--fadeinleft
+    - page_names.each do |page_name|
+      %li
+        = link_to image_tag("brands/brand-#{page_name}.jpg", :class => 'portfolio-item'), '/work/' + page_name

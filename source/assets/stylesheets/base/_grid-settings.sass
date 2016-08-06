@@ -1,0 +1,28 @@
+@import 'neat-helpers'
+
+// Neat Overrides
+$column: 90px
+$gutter: 0px
+$grid-columns: 12
+$max-width: 1200px
+
+// Neat Variables
+$mobile-size: 620px
+$tablet-size: 960px
+$desktop-size: 1200px
+
+// Neat Breakpoints
+$mobile: new-breakpoint(max-width $mobile-size)
+$tablet: new-breakpoint(max-width $tablet-size)
+$desktop: new-breakpoint(max-width $desktop-size)
+
+// Mixins
+=desktop
+  +media($desktop)
+    @content
+=tablet
+  +media($tablet)
+    @content
+=mobile
+  +media($mobile)
+    @content
