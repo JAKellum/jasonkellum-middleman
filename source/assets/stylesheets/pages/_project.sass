@@ -46,7 +46,7 @@ section.m-project-layout
         +span-columns(12)
         +rem(margin-top, 0px)
         +rem(margin-right, 0px)
-        +rem(margin-bottom, 50px)
+        +rem(margin-bottom, 100px)
         +rem(margin-left, 0px)
         .item-image
           +span-columns(7)
@@ -129,7 +129,11 @@ section.m-project-layout
             +shift(1)
       &.compare
         +span-columns(12)
+        +rem(padding-top, 40px)
         +rem(padding-bottom, 40px)
+        .item-text
+          +rem(padding-bottom, 40px)
+          text-align: center
         .item-image
           +span-columns(6)
           +mobile
@@ -158,3 +162,7 @@ section.m-project-layout
             display: inherit
             +mobile
               display: none
+
+.aiga
+  .div-toggler
+    +rem(margin-bottom, 20px)

@@ -9,17 +9,26 @@
         %h5 Jacksonville Chapter Newsletter
         %p Tasked with updating the monthly communications newsletter in 2015, the redesign brought forth a single-column modular layout, full-width images, bold new accent colors, and a vast reduction of text. Allowing it to act more as inspiration and a friendly upcoming event reminder, directing the audience to the website; where they can find full event details.
       .item-image
-        = image_tag('work/aiga-devices.gif')
+        = image_tag('work/aiga-devices.gif', {:alt => 'AIGA Devices'})
+    %article.image
+      .item-image.toggle-view
+        = image_tag('work/aiga-mailchimp.gif', {:alt => 'AIGA Mailchimp'})
+      .item-text
+        %h3 Mailchimp
+        %p Freddy the MailChimp mascot monkey.
     %article.compare
+      .item-text
+        %h3 Giving birth to the new.
+        %p Don't tase me bro.
       .item-image
         %h5 2014
-        = image_tag('work/aiga-prior.jpg')
+        = image_tag('work/aiga-prior.jpg', {:alt => 'AIGA Prior Newsletter Layout'})
       .item-image
         %select.div-toggler{'data-target' => '.aiga-toggle'}
           %option{'data-show' => '.aiga-post', :value => 'aiga-post'} 2015 Prototype
-          %option{'data-show' => '.aiga-jan', :value => 'aiga-jan'}  January 2015
-          %option{'data-show' => '.aiga-mar', :value => 'aiga-mar'}  March 2015
-          %option{'data-show' => '.aiga-apr', :value => 'aiga-apr'} April 2015
+          %option{'data-show' => '.aiga-jan', :value => 'aiga-jan'}  2015 January
+          %option{'data-show' => '.aiga-mar', :value => 'aiga-mar'}  2015 March
+          %option{'data-show' => '.aiga-apr', :value => 'aiga-apr'} 2015 April
         .aiga-toggle
           .aiga-post
             = image_tag('work/aiga-post.jpg')

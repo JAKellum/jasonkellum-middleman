@@ -7,15 +7,15 @@
       .item-text
         %h2 Oppify
         %h5 Personal Job Search Advocate
-        -# %p Content soon.
+        %p Text needed here.
         %cite
           %ul
             %li
-              Design:
-              %a{:href => "https://twitter.com/amberaultman", :target => "_blank"}Amber Aultman
-            %li
               Content:
               %a{:href => "http://www.acqylla.com/", :target => "_blank"}Jen Hyde
+            %li
+              Design:
+              %a{:href => "https://twitter.com/amberaultman", :target => "_blank"}Amber Aultman
             %li
               Front-End:
               %a{:href => "/"}Jason Kellum
@@ -23,61 +23,52 @@
               Development:
               %a{:href => "https://twitter.com/nateyaconis", :target => "_blank"}Nate Yaconis
       .item-image
-        = image_tag('work/oppify-devices.gif')
+        = image_tag('work/oppify-devices.jpg', {:alt => 'Oppify Devices'})
     %article.image
-      .item-image.toggle-view
-        .desk
-          = image_tag('work/oppify-marketing-desktop.jpg')
-        .tab
-          = image_tag('work/oppify-marketing-tablet.jpg')
-        .mob
-          = image_tag('work/oppify-marketing-mobile.jpg')
-      .item-text
-        %h3 Marketing
-        -# %p Text
-    %article.image
-      .item-image.toggle-view
-        .desk
-          = image_tag('work/oppify-signin-desktop.jpg')
-        .tab
-          = image_tag('work/oppify-signin-tablet.jpg')
-        .mob
-          = image_tag('work/oppify-signin-mobile.jpg')
-      .item-text
-        %h3 Sign In
-        -# %p Text
-    %article.image
-      .item-image.toggle-view
-        .desk
-          = image_tag('work/oppify-jobs-desktop.jpg')
-        .tab
-          = image_tag('work/oppify-jobs-tablet.jpg')
-        .mob
-          = image_tag('work/oppify-jobs-mobile.jpg')
-      .item-text
-        %h3 Jobs
-        -# %p Text
-    %article.image
-      .item-image.toggle-view
-        .desk
-          = image_tag('work/oppify-messaging-desktop.jpg')
-        .tab
-          = image_tag('work/oppify-messaging-tablet.jpg')
-        .mob
-          = image_tag('work/oppify-messaging-mobile.jpg')
-          = image_tag('work/oppify-messaging-mobile2.jpg')
+      .item-image.oppify-toggle
+        .oppify-one.hide
+          .desk
+            = image_tag('work/oppify-marketing-desktop.jpg', {:alt => 'Marketing Screen'})
+          .tab
+            = image_tag('work/oppify-marketing-tablet.jpg', {:alt => 'Marketing Screen'})
+          .mob
+            = image_tag('work/oppify-marketing-mobile.jpg', {:alt => 'Marketing Screen'})
+        .oppify-two.hide
+          .desk
+            = image_tag('work/oppify-signin-desktop.jpg', {:alt => 'Sign In Screen'})
+          .tab
+            = image_tag('work/oppify-signin-tablet.jpg', {:alt => 'Sign In Screen'})
+          .mob
+            = image_tag('work/oppify-signin-mobile.jpg', {:alt => 'Sign In Screen'})
+        .oppify-three
+          .desk
+            = image_tag('work/oppify-jobs-desktop.jpg', {:alt => 'Jobs Screen'})
+          .tab
+            = image_tag('work/oppify-jobs-tablet.jpg', {:alt => 'Jobs Screen'})
+          .mob
+            = image_tag('work/oppify-jobs-mobile.jpg', {:alt => 'Jobs Screen'})
+        .oppify-four.hide
+          .desk
+            = image_tag('work/oppify-messaging-desktop.jpg', {:alt => 'Messaging Screen'})
+          .tab
+            = image_tag('work/oppify-messaging-tablet.jpg', {:alt => 'Messaging Screen'})
+          .mob
+            = image_tag('work/oppify-messaging-mobile.jpg', {:alt => 'Messaging Screen'})
+            = image_tag('work/oppify-messaging-mobile2.jpg', {:alt => 'Messaging Screen'})
+        .oppify-five.hide
+          = image_tag('work/oppify-email.jpg', {:alt => 'Email Template Screen'})
       .item-text
         %h3 Messaging
-        -# %p Text
+        %p Text needed here.
+        %select.div-toggler{'data-target' => '.oppify-toggle'}
+          %option{'data-show' => '.oppify-one', :value => 'oppify-one'} Marketing
+          %option{'data-show' => '.oppify-two', :value => 'oppify-two'}  Sign In
+          %option{'data-show' => '.oppify-three', :value => 'oppify-three', :selected => 'selected'}  Jobs
+          %option{'data-show' => '.oppify-four', :value => 'oppify-four'}  Messaging
+          %option{'data-show' => '.oppify-five', :value => 'oppify-five'}  Email Template
     %article.image
       .item-image
-        = image_tag('work/oppify-meetup.jpg')
+        = image_tag('work/oppify-meetup.jpg', {:alt => 'Oppify Meetup Flyer'})
       .item-text
         %h3 Meetup Flyer
-        -# %p Text
-    %article.image
-      .item-image
-        = image_tag('work/oppify-email.jpg')
-      .item-text
-        %h3 Email Template
-        -# %p Text
+        %p Text needed here.

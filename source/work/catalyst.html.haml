@@ -21,32 +21,35 @@
               Front-End & Videography:
               %a{:href => "/"}Jason Kellum
       .item-image
-        = image_tag('work/catalyst-devices.gif')
+        = image_tag('work/catalyst-devices.jpg', {:alt => 'Catalyst Devices'})
     %article.image
       .item-image
-        %video{ :id => "video", :loop => "true", :autoplay => "true", :poster => image_path('catalyst-poster.jpg')}
+        %video{ :id => "video", :loop => "true", :autoplay => "true", :poster => image_path('work/catalyst-intro.jpg')}
           %source{ :src => image_path('videos/catalyst-intro.mp4'), :type => "video/mp4"}
           %source{ :src => image_path('videos/catalyst-intro.webm'), :type => "video/webm"}
-          %img{ :src => image_tag('catalyst-intro.jpg')}
+          = image_tag('work/catalyst-intro.jpg', {:alt => 'Catalyst homepage background video.'})
       .item-text
         %h3 Background Video
+        %p Needs some text.
     %article.image
-      .item-image.toggle-view
-        .desk
-          = image_tag('work/catalyst-home-desktop.jpg')
-        .tab
-          = image_tag('work/catalyst-home-tablet.jpg')
-        .mob
-          = image_tag('work/catalyst-home-mobile.jpg')
+      .item-image.catalyst-toggle
+        .catalyst-one
+          .desk
+            = image_tag('work/catalyst-home-desktop.jpg', {:alt => 'Catalyst Workshop Screen'})
+          .tab
+            = image_tag('work/catalyst-home-tablet.jpg', {:alt => 'Catalyst Workshop Screen'})
+          .mob
+            = image_tag('work/catalyst-home-mobile.jpg', {:alt => 'Catalyst Workshop Screen'})
+        .catalyst-two.hide
+          .desk
+            = image_tag('work/catalyst-form-desktop.jpg', {:alt => 'Catalyst Form Screen'})
+          .tab
+            = image_tag('work/catalyst-form-tablet.jpg', {:alt => 'Catalyst Form Screen'})
+          .mob
+            = image_tag('work/catalyst-form-mobile.jpg', {:alt => 'Catalyst Form Screen'})
       .item-text
-        %h3 Homepage
-    %article.image
-      .item-image.toggle-view
-        .desk
-          = image_tag('work/catalyst-form-desktop.jpg')
-        .tab
-          = image_tag('work/catalyst-form-tablet.jpg')
-        .mob
-          = image_tag('work/catalyst-form-mobile.jpg')
-      .item-text
-        %h3 Forms
+        %h3 2 Page app
+        %p Needs some text.
+        %select.div-toggler{'data-target' => '.catalyst-toggle'}
+          %option{'data-show' => '.catalyst-one', :value => 'catalyst-one', :selected => 'selected'} Homepage
+          %option{'data-show' => '.catalyst-two', :value => 'catalyst-two'}  Forms

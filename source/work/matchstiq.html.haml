@@ -20,59 +20,50 @@
               Development:
               %a{:href => "https://www.linkedin.com/pub/mark-montroy/3/168/841", :target => "_blank"}Mark Montroy
       .item-image
-        = image_tag('work/ms-devices.gif')
+        = image_tag('work/ms-devices.jpg', {:alt => 'Matchstiq Devices'})
     %article.image
-      .item-image.toggle-view
-        .desk
-          = image_tag('work/ms-dash-desktop.jpg')
-        .tab
-          = image_tag('work/ms-dash-tablet.jpg')
-        .mob
-          = image_tag('work/ms-dash-mobile.jpg')
+      .item-image.matchstiq-toggle
+        .matchstiq-one.hide
+          .desk
+            = image_tag('work/ms-splash-desktop.jpg', {:alt => 'Splash Screen'})
+          .tab
+            = image_tag('work/ms-splash-tablet.jpg', {:alt => 'Splash Screen'})
+          .mob
+            = image_tag('work/ms-splash-mobile.jpg', {:alt => 'Splash Screen'})
+        .matchstiq-two.hide
+          .desk
+            = image_tag('work/ms-login-desktop.jpg', {:alt => 'Login Screen'})
+          .tab
+            = image_tag('work/ms-login-tablet.jpg', {:alt => 'Login Screen'})
+          .mob
+            = image_tag('work/ms-login-mobile.jpg', {:alt => 'Login Screen'})
+        .matchstiq-three
+          .desk
+            = image_tag('work/ms-dash-desktop.jpg', {:alt => 'Dashboard Screen'})
+          .tab
+            = image_tag('work/ms-dash-tablet.jpg', {:alt => 'Dashboard Screen'})
+          .mob
+            = image_tag('work/ms-dash-mobile.jpg', {:alt => 'Dashboard Screen'})
+        .matchstiq-four.hide
+          .desk
+            = image_tag('work/ms-modal-desktop.jpg', {:alt => 'Modals Screen'})
+          .tab
+            = image_tag('work/ms-modal-tablet.jpg', {:alt => 'Modals Screen'})
+          .mob
+            = image_tag('work/ms-modal-mobile.jpg', {:alt => 'Modals Screen'})
+        .matchstiq-five.hide
+          .desk
+            = image_tag('work/ms-resources-desktop.jpg', {:alt => 'Resources Screen'})
+          .tab
+            = image_tag('work/ms-resources-tablet.jpg', {:alt => 'Resources Screen'})
+          .mob
+            = image_tag('work/ms-resources-mobile.jpg', {:alt => 'Resources Screen'})
       .item-text
-        %h3 Dashboard
+        %h3 In App Screens
         -# %p Text
-    %article.image
-      .item-image.toggle-view
-        .desk
-          = image_tag('work/ms-modal-desktop.jpg')
-        .tab
-          = image_tag('work/ms-modal-tablet.jpg')
-        .mob
-          = image_tag('work/ms-modal-mobile.jpg')
-      .item-text
-        %h3 Modals
-        -# %p Text
-    %article.image
-      .item-image.toggle-view
-        .desk
-          = image_tag('work/ms-splash-desktop.jpg')
-        .tab
-          = image_tag('work/ms-splash-tablet.jpg')
-        .mob
-          = image_tag('work/ms-splash-mobile.jpg')
-      .item-text
-        %h3 Splash Screen
-        -# %p Text
-    %article.image
-      .item-image.toggle-view
-        .desk
-          = image_tag('work/ms-resources-desktop.jpg')
-        .tab
-          = image_tag('work/ms-resources-tablet.jpg')
-        .mob
-          = image_tag('work/ms-resources-mobile.jpg')
-      .item-text
-        %h3 Resources
-        -# %p Text
-    %article.image
-      .item-image.toggle-view
-        .desk
-          = image_tag('work/ms-login-desktop.jpg')
-        .tab
-          = image_tag('work/ms-login-tablet.jpg')
-        .mob
-          = image_tag('work/ms-login-mobile.jpg')
-      .item-text
-        %h3 Login
-        -# %p Text
+        %select.div-toggler{'data-target' => '.matchstiq-toggle'}
+          %option{'data-show' => '.matchstiq-one', :value => 'matchstiq-one'} Login
+          %option{'data-show' => '.matchstiq-two', :value => 'matchstiq-two'}  Splash Screens
+          %option{'data-show' => '.matchstiq-three', :value => 'matchstiq-three', :selected => 'selected'}  Dashboard
+          %option{'data-show' => '.matchstiq-four', :value => 'matchstiq-four'}  Modals
+          %option{'data-show' => '.matchstiq-five', :value => 'matchstiq-five'}  Resources
