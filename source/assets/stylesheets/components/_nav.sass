@@ -5,8 +5,8 @@ nav
   top: 2.5%
   z-index: 2000
   .ion-chevron-left, .ion-chevron-right, .ion-home
-    margin-left: rem(20)
-    font-size: rem(24)
+    +rem(margin-left, 20px)
+    +rem(font-size, 24px)
     line-height: 1
     color: lighten($gray, 50%)
     z-index: 4000
@@ -41,15 +41,17 @@ nav
         color: darken($red, 25%)
     ul
       display: inline-block
-      max-width: rem(300)
-      margin-top: rem(15)
+      +rem(max-width, 300px)
+      +rem(margin-top, 15px)
       li
         +span-columns(4)
         display: block
-        padding-bottom: rem(20)
+        +rem(padding-bottom, 0px)
+        &:first-child
+          +rem(padding-top, 7px)
         i
           +transition
-          font-size: rem(42)
+          +rem(font-size, 42px)
           color: lighten($gray, 50%)
           &:hover
             color: darken($red, 25%)
@@ -57,10 +59,10 @@ nav
 // Hamburger CSS
 #nav-icon
   float: right
-  margin-right: rem(20)
+  +rem(margin-right, 20px)
   z-index: 2000
-  width: rem(30)
-  height: rem(20)
+  +rem(width, 30px)
+  +rem(height, 20px)
   position: relative
   -webkit-transform: rotate(0deg)
   -moz-transform: rotate(0deg)
@@ -78,10 +80,10 @@ nav
   +opacity(1)
   display: block
   position: absolute
-  height: rem(3)
+  +rem(height, 3px)
   width: 100%
   background: lighten($gray, 50%)
-  border-radius: rem(10)
+  +rem(border-radius, 10px)
   left: 0
   -webkit-transform: rotate(0deg)
   -moz-transform: rotate(0deg)
@@ -96,13 +98,13 @@ nav
   top: 0
 
 #nav-icon span:nth-child(2),#nav-icon span:nth-child(3)
-  top: rem(9)
+  +rem(top, 9px)
 
 #nav-icon span:nth-child(4)
-  top: rem(18)
+  +rem(top, 18px)
 
 #nav-icon.open span:nth-child(1)
-  top: rem(18)
+  +rem(top, 18px)
   width: 0%
   left: 50%
 
@@ -119,6 +121,6 @@ nav
   transform: rotate(-45deg)
 
 #nav-icon.open span:nth-child(4)
-  top: rem(9)
+  +rem(top, 9px)
   width: 0%
   left: 50%
