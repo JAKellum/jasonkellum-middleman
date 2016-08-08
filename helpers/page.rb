@@ -30,7 +30,7 @@ module Page
 
   def next_page_of(name)
     index = pages.index(name.to_sym)
-    return nil unless index.present?
+    return '' unless index.present?
 
     next_index = (index + 1) % pages.length
     pages[next_index].to_s
@@ -38,7 +38,7 @@ module Page
 
   def prev_page_of(name)
     index = pages.index(name.to_sym)
-    return nil unless index.present?
+    return '' unless index.present?
 
     prev_index = (index - 1) % pages.length
     pages[prev_index].to_s
