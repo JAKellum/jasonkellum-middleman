@@ -24,5 +24,5 @@ activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
   deploy.branch = 'master'
-  deploy.remote   = 'gh-pages'
+  deploy.remote = 'gh-pages'
 end
