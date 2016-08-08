@@ -3,6 +3,8 @@ module Page
     [
       :wayfind,
       :onespark,
+      # :ibm,
+      # :phil,
       :resumebot,
       :ignite,
       :txtout,

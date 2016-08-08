@@ -7,19 +7,39 @@
       .item-text
         %h2 AIGA
         %h5 Jacksonville Chapter Newsletter
-        %p Tasked with updating the monthly communications newsletter in 2015, the redesign brought forth a single-column modular layout, full-width images, bold new accent colors, and a vast reduction of text. Allowing it to act more as inspiration and a friendly upcoming event reminder, directing the audience to the website; where they can find full event details.
+        %p
+          %a{:href => "http://www.aiga.org/about/", :target => "_blank"}AIGA
+          advances design as a professional craft, strategic advantage and vital cultural force. As the largest community of design advocates, we bring together practitioners, enthusiasts, and patrons to amplify the voice of design and create the vision for a collective future. We define global standards and ethical practices, guide design education, enhance professional development, and make powerful tools and resources accessible to all.
+        %cite
+          %ul
+            %li
+              Content:
+              %a{:href => "http://jacksonville.aiga.org/about-us/", :target => "_blank"}Chapter Board Members
+            %li
+              Design & Front-End:
+              %a{:href => "/"}Jason Kellum
       .item-image
         = image_tag('work/aiga-devices.gif', {:alt => 'AIGA Devices'})
     %article.image
       .item-image.toggle-view
         = image_tag('work/aiga-mailchimp.gif', {:alt => 'AIGA Mailchimp'})
       .item-text
-        %h3 Mailchimp
-        %p Freddy the MailChimp mascot monkey.
+        %h3 Monthly Newsletter Creation Process
+        %p
+          We have a systematic process setup, which lives inside of a
+          %a{:href => "https://basecamp.com/", :target => "_blank"}Basecamp
+          project. Each month I'll create a new project, which has a templated todo list of tasks that need to be carried out at specific times of the month. Such as, a mid-month call for content or assigning the display priority of events.
+        %p
+          I'll then code and upload the newsletter into
+          %a{:href => "http://mailchimp.com/", :target => "_blank"}MailChimp
+          &period; We have an approval process in place where I send out a test email so we can have multiple eyes look over it, before I schedule it out to be sent at times where we believe we'll receive the largest amount of engagement from our constituents.
     %article.compare
       .item-text
-        %h3 Giving birth to the new.
-        %p Don't tase me bro.
+        %h3 2015 Redesign
+        %p
+          Upon joining the
+          %a{:href => "http://jacksonville.aiga.org/about-us/", :target => "_blank"}Jacksonville Chapter Board
+          in 2014, I was tasked with updating the monthly communications newsletter. The redesign brought forth a single-column modular layout, full-width images, bold new accent colors, and a vast reduction of text. Allowing it to act more as inspiration and a friendly upcoming event reminder, directing the audience to the website; where they can find full event details.
       .item-image
         %h5 2014
         = image_tag('work/aiga-prior.jpg', {:alt => 'AIGA Prior Newsletter Layout'})
