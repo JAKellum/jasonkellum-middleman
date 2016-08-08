@@ -23,6 +23,6 @@ end
 activate :deploy do |deploy|
   deploy.build_before = true
   deploy.deploy_method = :git
-  deploy.remote = 'gh-pages'
+  deploy.remote = 'git@github.com:JAKellum/JAKellum.github.io.git'
   deploy.branch = 'master'
 end
