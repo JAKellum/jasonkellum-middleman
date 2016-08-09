@@ -7,8 +7,22 @@
       .item-text
         %h2 Combofonts
         %h5 Webfont Combination Application
-        %p Combofonts is a personal project I worked on which takes the google library of webfonts and provides ideal font pairs. The application asks a series of questions based on the tone and mood of the context, provides a few alternative results, and then gives the markup to include in any website. It is targeted towards developers or those who are not as familiar with typography.
-        %a{:href => 'http://www.combofonts.com', :target => '_blank'} combofonts.com
+        %p
+          %a{:href => 'http://www.combofonts.com', :target => '_blank'}Combofonts
+          matches and recommends webfont pairs. It's a personal project I worked on, alongside my product design apprenticeship.
+        %p The application asks a series of questions based on the tone and mood of the context the text will be displayed in, provides you with a few combinations of options, and then gives you the markup to copy &amp; paste into any codebase.
+        %p
+          For the MVP I started with the
+          %a{:href => 'https://www.google.com/fonts', :target => '_blank'}Google font library
+          , as it's a great free resource.
+        %cite
+          %ul
+            %li
+              Design & Front-End:
+              %a{:href => "https://twitter.com/jasonakellum", :target => "_blank"}Jason Kellum
+            %li
+              Development:
+              %a{:href => "https://twitter.com/jasoncummings86", :target => "_blank"}Jason Cummings
       .item-image
         = image_tag('work/combofonts-devices.png')
     %article.image
@@ -56,8 +70,10 @@
           .mob
             = image_tag('work/cf-code-mobile.jpg', {:alt => 'Usable Code Screen'})
       .item-text
-        %h3 Usable Code
-        %p Text needed here.
+        %h3 In-App Screens
+        %p Acting as a educational playground for me, this was one of my first experiences with a Ruby on Rails project. It also gave me an excuse to take a deeper dive into typography on the web.
+        %p The largest obstacle was finding a way to provide quality results, while asking the fewest amount of questions necessary.
+        %p At the very least, this was a great product design exercise, allowing me to practice the techniques and learnings from my KYN apprenticeship.
         %select.div-toggler{'data-target' => '.combofonts-toggle'}
           %option{'data-show' => '.combofonts-one', :value => 'combofonts-one', :selected => 'selected'} Getting Started
           %option{'data-show' => '.combofonts-two', :value => 'combofonts-two'}  Describe
