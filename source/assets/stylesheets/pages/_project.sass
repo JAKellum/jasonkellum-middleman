@@ -54,6 +54,8 @@ section.m-project-layout
             display: block
             margin: 0 auto
             box-shadow: rem(5) rem(5) rem(5) lighten($gray, 60%)
+            &.hide
+              display: none
           +tablet
             +span-columns(7)
           +mobile
@@ -168,3 +170,7 @@ section.m-project-layout
 .aiga
   .div-toggler
     +rem(margin-bottom, 20px)
+.catalyst-workshop
+  position: relative
+  img
+    position: absolute

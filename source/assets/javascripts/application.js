@@ -55,4 +55,19 @@ $(document).ready(function() {
 
   window.smoothState = $('#main').smoothState(options).data('smoothState');
   hookEvents();
+
+  var _intervalId;
+
+    function fadeInLastImg()
+    {
+        var backImg = $('.catalyst-workshop img:first');
+        backImg.hide();
+        backImg.remove();
+        $('.catalyst-workshop' ).append( backImg );
+        backImg.fadeIn()
+    };
+
+    _intervalId = setInterval( function() {
+        fadeInLastImg();
+    }, 3000 );
 });

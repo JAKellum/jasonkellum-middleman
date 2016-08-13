@@ -7,29 +7,47 @@
       .item-text
         %h2 Catalyst
         %h5 Innovation Workshops
-        %p Write-up coming soon.
+        %p
+          %a{:href => "http://www.ignitewithus.com/products/catalyst", :target => "_blank"}Catalyst workshops
+          facilitated a creative, safe, and exciting environment for teams to come together to define and prioritize specific problems. Our exercises brought out the voices in teams to generate potential solutions to these problems. We then experimented and evaluated those solutions to determine a project plan to implement the best solution for the business.
+        %p Each session included fun team-building activities which lead to real business outcomes.
+      .item-image
+        %video{ :id => "video", :loop => "true", :autoplay => "true", :poster => image_path('work/catalyst-devices.jpg')}
+          %source{ :src => image_path('videos/catalyst-devices.mp4'), :type => "video/mp4"}
+          %source{ :src => image_path('videos/catalyst-devices.webm'), :type => "video/webm"}
+          = image_tag('work/catalyst-devices.jpg', {:alt => 'Catalyst homepage background video.'})
+    %article.image
+      .item-image.catalyst-workshop
+        = image_tag('work/catalyst-workshop-1.jpg', {:alt => 'Catalyst Innovation Workshop'})
+        = image_tag('work/catalyst-workshop-2.jpg', {:alt => 'Catalyst Innovation Workshop'})
+        = image_tag('work/catalyst-workshop-3.jpg', {:alt => 'Catalyst Innovation Workshop'})
+        = image_tag('work/catalyst-workshop-4.jpg', {:alt => 'Catalyst Innovation Workshop'})
+        = image_tag('work/catalyst-workshop-5.jpg', {:alt => 'Catalyst Innovation Workshop'})
+        = image_tag('work/catalyst-workshop-6.jpg', {:alt => 'Catalyst Innovation Workshop'})
+        = image_tag('work/catalyst-workshop-7.jpg', {:alt => 'Catalyst Innovation Workshop'})
+        = image_tag('work/catalyst-workshop-8.jpg', {:alt => 'Catalyst Innovation Workshop'})
+        = image_tag('work/catalyst-workshop-9.jpg', {:alt => 'Catalyst Innovation Workshop'})
+        = image_tag('work/catalyst-workshop-10.jpg', {:alt => 'Catalyst Innovation Workshop'})
+      .item-image
+        = image_tag('work/catalyst-workshop-1.jpg', {:alt => 'Catalyst Innovation Workshop'})
+      .item-text
+        %h3 Hands-on Workshop
+        %p
+          %a{:href => "https://www.communityfirstfl.org/", :target => "_blank"}Community First
+          was one of the great forward-thinking businesses who participated in a 2-day session.
+        %p We lead the group through many different design thinking exercises including creating personas, mind-mapping, and brainstorming. We wanted to provide participants with a new user-centric way of thinking when returning to their daily routine.
         %cite
           %ul
             %li
-              Design:
-              %a{:href => "http://www.katygarrison.com/", :target => "_blank"}Katy Garrison
+              Facilitation:
+              %a{:href => "https://twitter.com/cat_knees", :target => "_blank"}Anthony Catanese
+              &plus;
+              %a{:href => "https://twitter.com/amberaultman", :target => "_blank"}Amber Aultman
+              &plus;
+              %a{:href => "https://twitter.com/jasonakellum", :target => "_blank"}Jason Kellum
             %li
-              Content:
-              %a{:href => "http://www.acqylla.com/", :target => "_blank"}Jen Hyde
-            %li
-              Front-End & Videography:
-              %a{:href => "/"}Jason Kellum
-      .item-image
-        = image_tag('work/catalyst-devices.jpg', {:alt => 'Catalyst Devices'})
-    %article.image
-      .item-image
-        %video{ :id => "video", :loop => "true", :autoplay => "true", :poster => image_path('work/catalyst-intro.jpg')}
-          %source{ :src => image_path('videos/catalyst-intro.mp4'), :type => "video/mp4"}
-          %source{ :src => image_path('videos/catalyst-intro.webm'), :type => "video/webm"}
-          = image_tag('work/catalyst-intro.jpg', {:alt => 'Catalyst homepage background video.'})
-      .item-text
-        %h3 Background Video
-        %p Write-up coming soon.
+              Photography:
+              %a{:href => "https://twitter.com/jasonakellum", :target => "_blank"}Jason Kellum
     %article.image
       .item-image.catalyst-toggle
         .catalyst-one
@@ -47,8 +65,21 @@
           .mob
             = image_tag('work/catalyst-form-mobile.jpg', {:alt => 'Catalyst Form Screen'})
       .item-text
-        %h3 2 Page app
-        %p Write-up coming soon.
+        %h3 Interest Landing Page
+        %p This product was unqiue for Ignite. Unlike the rest of our products, it was not technology reliant. The only piece of technology it could use was a landing page for new sign-ups. This would often be included in promotional emails, as it helped employees convince company executives to make this investment in their team and themselves.
+        %p My original task for this site was to assist in the front-end development needs; however, when building this page I couldn't help but think something was missing. Instead of a static photo of the space, why not capture and share a bit of the experience?
+        %p After making a suggestion to create a looping background video, I was nominated for the task and we shot our next workshop to gather footage.
+        %cite
+          %ul
+            %li
+              Content:
+              %a{:href => "http://www.acqylla.com/", :target => "_blank"}Jen Hyde
+            %li
+              Design:
+              %a{:href => "http://www.katygarrison.com/", :target => "_blank"}Katy Garrison
+            %li
+              Front-End & Videography:
+              %a{:href => "/"}Jason Kellum
         %select.div-toggler{'data-target' => '.catalyst-toggle'}
           %option{'data-show' => '.catalyst-one', :value => 'catalyst-one', :selected => 'selected'} Homepage
           %option{'data-show' => '.catalyst-two', :value => 'catalyst-two'}  Forms
