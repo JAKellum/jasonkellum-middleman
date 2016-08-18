@@ -40,6 +40,71 @@
           %source{ :src => image_path('videos/wayfind-onboarding.webm'), :type => "video/webm"}
           = image_tag('work/wayfind-onboarding.jpg', {:alt => 'Wayfind Onboarding Flow'})
     %article.image
+      .item-image.wayfind-toggle
+        .wayfind-one
+          .desk
+            = image_tag('work/wayfind-onboarding-intro-desktop.jpg', {:alt => 'Onboarding Intro Screen'})
+          .tab
+            = image_tag('work/wayfind-onboarding-intro-tablet.jpg', {:alt => 'Onboarding Intro Screen'})
+          .mob
+            = image_tag('work/wayfind-onboarding-intro-mobile.jpg', {:alt => 'Onboarding Intro Screen'})
+        .wayfind-two.hide
+          .desk
+            = image_tag('work/wayfind-onboarding-step1-desktop.jpg', {:alt => 'Onboarding Personality Screen'})
+          .tab
+            = image_tag('work/wayfind-onboarding-step1-tablet.jpg', {:alt => 'Onboarding Personality Screen'})
+          .mob
+            = image_tag('work/wayfind-onboarding-step1-mobile.jpg', {:alt => 'Onboarding Personality Screen'})
+        .wayfind-three.hide
+          .desk
+            = image_tag('work/wayfind-onboarding-step2-desktop.jpg', {:alt => 'Onboarding Background Screen'})
+          .tab
+            = image_tag('work/wayfind-onboarding-step2-tablet.jpg', {:alt => 'Onboarding Background Screen'})
+          .mob
+            = image_tag('work/wayfind-onboarding-step2-mobile.jpg', {:alt => 'Onboarding Background Screen'})
+        .wayfind-four.hide
+          .desk
+            = image_tag('work/wayfind-onboarding-step3-desktop.jpg', {:alt => 'Onboarding Skills Screen'})
+          .tab
+            = image_tag('work/wayfind-onboarding-step3-tablet.jpg', {:alt => 'Onboarding Skills Screen'})
+          .mob
+            = image_tag('work/wayfind-onboarding-step3-mobile.jpg', {:alt => 'Onboarding Skills Screen'})
+        .wayfind-five.hide
+          .desk
+            = image_tag('work/wayfind-onboarding-step4-desktop.jpg', {:alt => 'Onboarding Interests Screen'})
+          .tab
+            = image_tag('work/wayfind-onboarding-step4-tablet.jpg', {:alt => 'Onboarding Interests Screen'})
+          .mob
+            = image_tag('work/wayfind-onboarding-step4-mobile.jpg', {:alt => 'Onboarding Interests Screen'})
+        .wayfind-six.hide
+          .desk
+            = image_tag('work/wayfind-onboarding-step5-desktop.jpg', {:alt => 'Onboarding Save Profile Screen'})
+          .tab
+            = image_tag('work/wayfind-onboarding-step5-tablet.jpg', {:alt => 'Onboarding Save Profile Screen'})
+          .mob
+            = image_tag('work/wayfind-onboarding-step5-mobile.jpg', {:alt => 'Onboarding Save Profile Screen'})
+        .wayfind-seven.hide
+          .desk
+            = image_tag('work/wayfind-onboarding-completed-desktop.jpg', {:alt => 'Onboarding Success Screen'})
+          .tab
+            = image_tag('work/wayfind-onboarding-completed-tablet.jpg', {:alt => 'Onboarding Success Screen'})
+          .mob
+            = image_tag('work/wayfind-onboarding-completed-mobile.jpg', {:alt => 'Onboarding Success Screen'})
+      .item-text
+        %h3 Onboarding Flow
+        %p
+          A company’s HR department sends out email invites where users are directed to a brief
+          %a{:href => "https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator", :target => "_blank"}Myers–Briggs
+          style questionnaire. Here we gathered the minimum amount of information we felt was needed for our algorithm to help employees find their dream job. What you see to the left are the results of outcomes we learned from our user interview sessions.
+        %select.div-toggler{'data-target' => '.wayfind-toggle'}
+          %option{'data-show' => '.wayfind-one', :value => 'wayfind-one'} Onboarding Intro
+          %option{'data-show' => '.wayfind-two', :value => 'wayfind-two'} Onboarding Personality
+          %option{'data-show' => '.wayfind-three', :value => 'wayfind-three'} Onboarding Background
+          %option{'data-show' => '.wayfind-four', :value => 'wayfind-four'} Onboarding Skills
+          %option{'data-show' => '.wayfind-five', :value => 'wayfind-five'} Onboarding Interests
+          %option{'data-show' => '.wayfind-six', :value => 'wayfind-six'} Onboarding Save Profile
+          %option{'data-show' => '.wayfind-seven', :value => 'wayfind-seven'} Onboarding Success
+    %article.image
       .item-image.wayfind-toggle-2
         .wayfind-eight.hide
           .desk
@@ -176,70 +241,35 @@
           %option{'data-show' => '.wayfind-twentytwo', :value => 'wayfind-twentytwo'} Profile Interests
           %option{'data-show' => '.wayfind-twentythree', :value => 'wayfind-twentythree'} Profile Notification Preferences
     %article.image
-      .item-image.wayfind-toggle
-        .wayfind-one
-          .desk
-            = image_tag('work/wayfind-onboarding-intro-desktop.jpg', {:alt => 'Onboarding Intro Screen'})
-          .tab
-            = image_tag('work/wayfind-onboarding-intro-tablet.jpg', {:alt => 'Onboarding Intro Screen'})
-          .mob
-            = image_tag('work/wayfind-onboarding-intro-mobile.jpg', {:alt => 'Onboarding Intro Screen'})
-        .wayfind-two.hide
-          .desk
-            = image_tag('work/wayfind-onboarding-step1-desktop.jpg', {:alt => 'Onboarding Personality Screen'})
-          .tab
-            = image_tag('work/wayfind-onboarding-step1-tablet.jpg', {:alt => 'Onboarding Personality Screen'})
-          .mob
-            = image_tag('work/wayfind-onboarding-step1-mobile.jpg', {:alt => 'Onboarding Personality Screen'})
-        .wayfind-three.hide
-          .desk
-            = image_tag('work/wayfind-onboarding-step2-desktop.jpg', {:alt => 'Onboarding Background Screen'})
-          .tab
-            = image_tag('work/wayfind-onboarding-step2-tablet.jpg', {:alt => 'Onboarding Background Screen'})
-          .mob
-            = image_tag('work/wayfind-onboarding-step2-mobile.jpg', {:alt => 'Onboarding Background Screen'})
-        .wayfind-four.hide
-          .desk
-            = image_tag('work/wayfind-onboarding-step3-desktop.jpg', {:alt => 'Onboarding Skills Screen'})
-          .tab
-            = image_tag('work/wayfind-onboarding-step3-tablet.jpg', {:alt => 'Onboarding Skills Screen'})
-          .mob
-            = image_tag('work/wayfind-onboarding-step3-mobile.jpg', {:alt => 'Onboarding Skills Screen'})
-        .wayfind-five.hide
-          .desk
-            = image_tag('work/wayfind-onboarding-step4-desktop.jpg', {:alt => 'Onboarding Interests Screen'})
-          .tab
-            = image_tag('work/wayfind-onboarding-step4-tablet.jpg', {:alt => 'Onboarding Interests Screen'})
-          .mob
-            = image_tag('work/wayfind-onboarding-step4-mobile.jpg', {:alt => 'Onboarding Interests Screen'})
-        .wayfind-six.hide
-          .desk
-            = image_tag('work/wayfind-onboarding-step5-desktop.jpg', {:alt => 'Onboarding Save Profile Screen'})
-          .tab
-            = image_tag('work/wayfind-onboarding-step5-tablet.jpg', {:alt => 'Onboarding Save Profile Screen'})
-          .mob
-            = image_tag('work/wayfind-onboarding-step5-mobile.jpg', {:alt => 'Onboarding Save Profile Screen'})
-        .wayfind-seven.hide
-          .desk
-            = image_tag('work/wayfind-onboarding-completed-desktop.jpg', {:alt => 'Onboarding Success Screen'})
-          .tab
-            = image_tag('work/wayfind-onboarding-completed-tablet.jpg', {:alt => 'Onboarding Success Screen'})
-          .mob
-            = image_tag('work/wayfind-onboarding-completed-mobile.jpg', {:alt => 'Onboarding Success Screen'})
+      .item-image.wayfind-toggle-3
+        .wayfind-twentyfour.hide
+          = image_tag('work/wayfind-usertesting-setup.jpg', {:alt => 'Station Setup'})
+        .wayfind-twentyfive.hide
+          = image_tag('work/wayfind-usertesting-drive.jpg', {:alt => 'Google Drive Folders'})
+        .wayfind-twentysix.hide
+          = image_tag('work/wayfind-usertesting-interview-summaries.jpg', {:alt => 'Interview Summaries'})
+        .wayfind-twentyseven
+          = image_tag('work/wayfind-usertesting-actionable-steps.jpg', {:alt => 'Actionable Steps from User Interviews'})
+        .wayfind-twentyeight.hide
+          = image_tag('work/wayfind-usertesting-lookbackio-recordings.jpg', {:alt => 'Lookback.io Recordings'})
+        .wayfind-twentynine.hide
+          = image_tag('work/wayfind-usertesting-lookbackio-watch.jpg', {:alt => 'Lookback.io Watch'})
       .item-text
-        %h3 Onboarding Flow
+        %h3 User Testing
+        %p User tests we conducted made us aware of multiple issues users were dealing with during our onboarding process; including, progress slider click area being too small, unclear active skills, and hidden progression buttons below the fold.
         %p
-          A company’s HR department sends out email invites where users are directed to a brief
-          %a{:href => "https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator", :target => "_blank"}Myers–Briggs
-          style questionnaire. Here we gathered the minimum amount of information we felt was needed for our algorithm to help employees find their dream job. What you see to the left are the results of outcomes we learned from our user interview sessions.
-        %select.div-toggler{'data-target' => '.wayfind-toggle'}
-          %option{'data-show' => '.wayfind-one', :value => 'wayfind-one'} Onboarding Intro
-          %option{'data-show' => '.wayfind-two', :value => 'wayfind-two'} Onboarding Personality
-          %option{'data-show' => '.wayfind-three', :value => 'wayfind-three'} Onboarding Background
-          %option{'data-show' => '.wayfind-four', :value => 'wayfind-four'} Onboarding Skills
-          %option{'data-show' => '.wayfind-five', :value => 'wayfind-five'} Onboarding Interests
-          %option{'data-show' => '.wayfind-six', :value => 'wayfind-six'} Onboarding Save Profile
-          %option{'data-show' => '.wayfind-seven', :value => 'wayfind-seven'} Onboarding Success
+          All interviews were documented using a custom folder structure on
+          %a{:href => "https://lookback.io/dashboard", :target => "_blank"}Google Drive
+          &period; There you could find raw notes, summaries, actionable tasks, and learnings. We used
+          %a{:href => "https://lookback.io/dashboard", :target => "_blank"}Lookback.io
+          to record the sessions, allowing us to record both the screen and camera at once.
+        %select.div-toggler{'data-target' => '.wayfind-toggle-3'}
+          %option{'data-show' => '.wayfind-twentyfour', :value => 'wayfind-twentyfour'} Station Setup
+          %option{'data-show' => '.wayfind-twentyfive', :value => 'wayfind-twentyfive'} Google Drive Folders
+          %option{'data-show' => '.wayfind-twentysix', :value => 'wayfind-twentysix'} Interview Summaries
+          %option{'data-show' => '.wayfind-twentyseven', :value => 'wayfind-twentyseven', :selected => 'selected'} Actionable Steps from User Interviews
+          %option{'data-show' => '.wayfind-twentyeight', :value => 'wayfind-twentyeight'} Lookback.io Recordings
+          %option{'data-show' => '.wayfind-twentynine', :value => 'wayfind-twentynine'} Lookback.io Watch
     %article.image
       .item-image.toggle-view
         = image_tag('work/wayfind-invision.gif', {:alt => 'InVision Prototype'})
