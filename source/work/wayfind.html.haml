@@ -41,6 +41,13 @@
           = image_tag('work/wayfind-onboarding.jpg', {:alt => 'Wayfind Onboarding Flow'})
     %article.image
       .item-image.wayfind-toggle
+        .wayfind-thirtytwo.hide
+          .desk
+            = image_tag('work/wayfind-email-onboarding.jpg', {:alt => 'Onboarding Email'})
+          .tab
+            = image_tag('work/wayfind-email-onboarding.jpg', {:alt => 'Onboarding Email'})
+          .mob
+            = image_tag('work/wayfind-email-onboarding.jpg', {:alt => 'Onboarding Email'})
         .wayfind-one
           .desk
             = image_tag('work/wayfind-onboarding-intro-desktop.jpg', {:alt => 'Onboarding Intro Screen'})
@@ -95,9 +102,10 @@
         %p
           A company’s HR department sends out email invites where users are directed to a brief
           %a{:href => "https://en.wikipedia.org/wiki/Myers%E2%80%93Briggs_Type_Indicator", :target => "_blank"}Myers–Briggs
-          style questionnaire. Here we gathered the minimum amount of information we felt was needed for our algorithm to help employees find their dream job. What you see to the left are the results of outcomes we learned from our user interview sessions.
+          style questionnaire. Here we gathered the minimum amount of information we felt was needed for our algorithm to help employees find their dream job. What you see to the left are the results of outcomes we learned from our user testing sessions.
         %select.div-toggler{'data-target' => '.wayfind-toggle'}
-          %option{'data-show' => '.wayfind-one', :value => 'wayfind-one'} Onboarding Intro
+          %option{'data-show' => '.wayfind-thirtytwo', :value => 'wayfind-thirtytwo'} Onboarding Email
+          %option{'data-show' => '.wayfind-one', :value => 'wayfind-one', :selected => 'selected'} Onboarding Intro
           %option{'data-show' => '.wayfind-two', :value => 'wayfind-two'} Onboarding Personality
           %option{'data-show' => '.wayfind-three', :value => 'wayfind-three'} Onboarding Background
           %option{'data-show' => '.wayfind-four', :value => 'wayfind-four'} Onboarding Skills
@@ -155,6 +163,13 @@
             = image_tag('work/wayfind-open-positions-tablet.jpg', {:alt => 'Open Positions Screen'})
           .mob
             = image_tag('work/wayfind-open-positions-mobile.jpg', {:alt => 'Open Positions Screen'})
+        .wayfind-thirtythree.hide
+          .desk
+            = image_tag('work/wayfind-email-open-positions.jpg', {:alt => 'Open Positions Email'})
+          .tab
+            = image_tag('work/wayfind-email-open-positions.jpg', {:alt => 'Open Positions Email'})
+          .mob
+            = image_tag('work/wayfind-email-open-positions.jpg', {:alt => 'Open Positions Email'})
         .wayfind-fifteen.hide
           .desk
             = image_tag('work/wayfind-plan-steps-desktop.jpg', {:alt => 'Plan Steps Screen'})
@@ -231,6 +246,7 @@
           %option{'data-show' => '.wayfind-twelve', :value => 'wayfind-twelve'} Channel
           %option{'data-show' => '.wayfind-thirteen', :value => 'wayfind-thirteen'} Role Details
           %option{'data-show' => '.wayfind-fourteen', :value => 'wayfind-fourteen'} Open Positions
+          %option{'data-show' => '.wayfind-thirtythree', :value => 'wayfind-thirtythree'} Open Positions Email
           %option{'data-show' => '.wayfind-fifteen', :value => 'wayfind-fifteen'} Plan Steps
           %option{'data-show' => '.wayfind-sixteen', :value => 'wayfind-sixteen'} Plan Overview
           %option{'data-show' => '.wayfind-seventeen', :value => 'wayfind-seventeen'} Browse
@@ -256,13 +272,13 @@
           = image_tag('work/wayfind-usertesting-lookbackio-watch.jpg', {:alt => 'Lookback.io Watch'})
       .item-text
         %h3 User Testing
-        %p User tests we conducted made us aware of multiple issues users were dealing with during our onboarding process; including, progress slider click area being too small, unclear active skills, and hidden progression buttons below the fold.
+        %p Conducting user tests made us aware of multiple issues users were dealing with throughout the application, including: onboarding progression buttons hidden below the fold, personality slider click areas being too small, and it was unclear how to favorite a role card.
         %p
           All interviews were documented using a custom folder structure on
           %a{:href => "https://www.google.com/drive/", :target => "_blank"}Google Drive
-          &period; There you could find raw notes, summaries, actionable tasks, and learnings. We used
+          where colleagues could find raw notes, summaries, and links to recordings. We used
           %a{:href => "https://lookback.io/", :target => "_blank"}Lookback.io
-          to record the sessions, allowing us to record both the screen and camera at once.
+          to record the sessions allowing us to capture both the screen and camera at once.
         %select.div-toggler{'data-target' => '.wayfind-toggle-3'}
           %option{'data-show' => '.wayfind-twentyfour', :value => 'wayfind-twentyfour'} Station Setup
           %option{'data-show' => '.wayfind-twentyfive', :value => 'wayfind-twentyfive'} Google Drive Folders
@@ -271,7 +287,34 @@
           %option{'data-show' => '.wayfind-twentyeight', :value => 'wayfind-twentyeight'} Lookback.io Recordings
           %option{'data-show' => '.wayfind-twentynine', :value => 'wayfind-twentynine'} Lookback.io Watch
     %article.image
-      .item-image.toggle-view
+      .item-image
+        %video{ :id => "video", :loop => "true", :autoplay => "true", :poster => image_path('work/wayfind-open-positions.jpg')}
+          %source{ :src => image_path('videos/wayfind-open-positions.mp4'), :type => "video/mp4"}
+          %source{ :src => image_path('videos/wayfind-open-positions.webm'), :type => "video/webm"}
+          = image_tag('work/wayfind-open-positions.jpg', {:alt => 'Wayfind Open Position Flow'})
+      .item-text
+        %h3 Open Positions
+        %p
+          An observation we learned from our user tests was a lack of action to be taken after choosing a role or successfully creating a plan. To resolve this we experimented with adding open positions to select roles, accessible from the role details and plan overview pages. These were roles that may have slightly different titles but would provide similar experience which they could immediately apply for.
+        %p
+          Additionally we created an open positions email notifying users if any of their saved roles or plans had a new job listing. This could either send out in real time, weekly, or monthly depending on a preference chosen by the user.
+    %article.image.full
+      .item-image.wayfind-toggle-4
+        .wayfind-thirty.hide
+          = image_tag('work/wayfind-role-card-exploration-1.jpg', {:alt => 'Role Card Explorations V1'})
+        .wayfind-thirtyone
+          = image_tag('work/wayfind-role-card-exploration-2.jpg', {:alt => 'Role Card Explorations V2'})
+      .item-text
+        %h3 Open Positions Card Indication Exploration
+        %p
+          With the addition of open positions being attached to certain roles, we wanted an indication to be on the role cards. Around this time, we also found the ability to favorite a role was unclear. This meant the new cards would need a solution which incorporated both.
+        %p
+          By reducing the confusion created from having too many choices, we only wanted two actions to be taken from a role card: access to the role details page and the ability to favorite a role. This meant open positions would only be displayed here with a visual clue and users would have to dive deeper to see the attached positions.
+        %select.div-toggler{'data-target' => '.wayfind-toggle-4'}
+          %option{'data-show' => '.wayfind-thirty', :value => 'wayfind-thirty'} Role Card Explorations V1
+          %option{'data-show' => '.wayfind-thirtyone', :value => 'wayfind-thirtyone', :selected => 'selected'} Role Card Explorations V2
+    %article.image
+      .item-image
         = image_tag('work/wayfind-invision.gif', {:alt => 'InVision Prototype'})
       .item-text
         %h3 InVision Prototype
