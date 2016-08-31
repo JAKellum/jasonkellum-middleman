@@ -19,10 +19,10 @@
               Design & Front-End:
               %a{:href => "/"}Jason Kellum
       .item-image
-        = image_tag('work/aiga-devices.gif', {:alt => 'AIGA Devices'})
+        = image_tag('work/aiga-devices.png', {:alt => 'AIGA Devices'})
     %article.image
       .item-image.toggle-view
-        = image_tag('work/aiga-mailchimp.gif', {:alt => 'AIGA Mailchimp'})
+        = image_tag('work/aiga-newsletter-mailchimp.gif', {:alt => 'AIGA Mailchimp'})
       .item-text
         %h3 Monthly Newsletter Creation Process
         %p
@@ -33,6 +33,16 @@
           I'll then code and upload the newsletter into
           %a{:href => "http://mailchimp.com/", :target => "_blank"}MailChimp
           &period; We have an approval process in place where I send out a test email so we can have multiple eyes look over it before I schedule it out to be sent at times where we believe we'll receive the largest amount of engagement from our members.
+    %article.image
+      .item-image.toggle-view
+        = image_tag('work/aiga-newsletter-subject-testing.jpg', {:alt => 'Subject Line A/B Testing'})
+      .item-text
+        %h3 Subject Line A/B Testing
+        %p
+          In an attempt to increase engagement rates, we conducted A/B tests with our subject lines over a 4-month period (December 2015 &ndash; March 2016.) From this data, we found subtle variations among the averages of our three test groups, with a slight but definitive victor.
+        %p
+          The winning format:
+          %i Month newsletter: Event, Event, and Event
     %article.compare
       .item-text
         %h3 2015 Redesign
@@ -41,20 +51,122 @@
           %a{:href => "http://jacksonville.aiga.org/about-us/", :target => "_blank"}Jacksonville Chapter Board
           in 2014, I was tasked with updating the monthly communications newsletter. The redesign brought forth a single-column modular layout, full-width images, bold new accent colors, and a vast reduction of text. The newsletter  acted more as inspiration and a friendly upcoming event reminder directing the audience to the website where they can find full event details.
       .item-image
-        %h5 2014
-        = image_tag('work/aiga-prior.jpg', {:alt => 'AIGA Prior Newsletter Layout'})
+        %h5 Prior
+        = image_tag('work/aiga-newsletter-prior-14-desktop.jpg', {:alt => 'AIGA Prior Newsletter Layout'})
       .item-image
         %select.div-toggler{'data-target' => '.aiga-toggle'}
-          %option{'data-show' => '.aiga-post', :value => 'aiga-post'} 2015 Prototype
-          %option{'data-show' => '.aiga-jan', :value => 'aiga-jan'}  2015 January
-          %option{'data-show' => '.aiga-mar', :value => 'aiga-mar'}  2015 March
-          %option{'data-show' => '.aiga-apr', :value => 'aiga-apr'} 2015 April
+          %option{'data-show' => '.aiga-one', :value => 'aiga-one'}  2015 January
+          %option{'data-show' => '.aiga-two', :value => 'aiga-two'}  2015 March
+          %option{'data-show' => '.aiga-three', :value => 'aiga-three'} 2015 April
+          %option{'data-show' => '.aiga-four', :value => 'aiga-four'} 2015 May
+          %option{'data-show' => '.aiga-five', :value => 'aiga-five'} 2015 June
+          %option{'data-show' => '.aiga-six', :value => 'aiga-six'} 2015 July
+          %option{'data-show' => '.aiga-seven', :value => 'aiga-seven'} 2015 August
+          %option{'data-show' => '.aiga-eight', :value => 'aiga-eight'} 2015 September
+          %option{'data-show' => '.aiga-nine', :value => 'aiga-nine'} 2015 October
+          %option{'data-show' => '.aiga-ten', :value => 'aiga-ten'} 2015 November
+          %option{'data-show' => '.aiga-eleven', :value => 'aiga-eleven'} 2015 December
+          %option{'data-show' => '.aiga-twelve', :value => 'aiga-twelve'} 2016 January
+          %option{'data-show' => '.aiga-thirteen', :value => 'aiga-thirteen'} 2016 February
+          %option{'data-show' => '.aiga-fourteen', :value => 'aiga-fourteen'} 2016 March
+          %option{'data-show' => '.aiga-fifteen', :value => 'aiga-fifteen'} 2016 April
+          %option{'data-show' => '.aiga-sixteen', :value => 'aiga-sixteen'} 2016 May
+          %option{'data-show' => '.aiga-seventeen', :value => 'aiga-seventeen'} 2016 June
+          %option{'data-show' => '.aiga-eighteen', :value => 'aiga-eighteen'} 2016 July
+          %option{'data-show' => '.aiga-nineteen', :value => 'aiga-nineteen', :selected => 'selected'} 2016 August
         .aiga-toggle
-          .aiga-post
-            = image_tag('work/aiga-post.jpg')
-          .aiga-jan.hide
-            = image_tag('work/aiga-january.jpg')
-          .aiga-mar.hide
-            = image_tag('work/aiga-march.jpg')
-          .aiga-apr.hide
-            = image_tag('work/aiga-april.jpg')
+          .aiga-one.hide
+            .desk
+              = image_tag('work/aiga-newsletter-january-15-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-january-15-mobile.jpg')
+          .aiga-two.hide
+            .desk
+              = image_tag('work/aiga-newsletter-march-15-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-march-15-mobile.jpg')
+          .aiga-three.hide
+            .desk
+              = image_tag('work/aiga-newsletter-april-15-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-april-15-mobile.jpg')
+          .aiga-four.hide
+            .desk
+              = image_tag('work/aiga-newsletter-may-15-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-may-15-mobile.jpg')
+          .aiga-five.hide
+            .desk
+              = image_tag('work/aiga-newsletter-june-15-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-june-15-mobile.jpg')
+          .aiga-six.hide
+            .desk
+              = image_tag('work/aiga-newsletter-july-15-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-july-15-mobile.jpg')
+          .aiga-seven.hide
+            .desk
+              = image_tag('work/aiga-newsletter-august-15-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-august-15-mobile.jpg')
+          .aiga-eight.hide
+            .desk
+              = image_tag('work/aiga-newsletter-september-15-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-september-15-mobile.jpg')
+          .aiga-nine.hide
+            .desk
+              = image_tag('work/aiga-newsletter-october-15-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-october-15-mobile.jpg')
+          .aiga-ten.hide
+            .desk
+              = image_tag('work/aiga-newsletter-november-15-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-november-15-mobile.jpg')
+          .aiga-eleven.hide
+            .desk
+              = image_tag('work/aiga-newsletter-december-15-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-december-15-mobile.jpg')
+          .aiga-twelve.hide
+            .desk
+              = image_tag('work/aiga-newsletter-january-16-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-january-16-mobile.jpg')
+          .aiga-thirteen.hide
+            .desk
+              = image_tag('work/aiga-newsletter-february-16-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-february-16-mobile.jpg')
+          .aiga-fourteen.hide
+            .desk
+              = image_tag('work/aiga-newsletter-march-16-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-march-16-mobile.jpg')
+          .aiga-fifteen.hide
+            .desk
+              = image_tag('work/aiga-newsletter-april-16-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-april-16-mobile.jpg')
+          .aiga-sixteen.hide
+            .desk
+              = image_tag('work/aiga-newsletter-may-16-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-may-16-mobile.jpg')
+          .aiga-seventeen.hide
+            .desk
+              = image_tag('work/aiga-newsletter-june-16-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-june-16-mobile.jpg')
+          .aiga-eighteen.hide
+            .desk
+              = image_tag('work/aiga-newsletter-july-16-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-july-16-mobile.jpg')
+          .aiga-nineteen
+            .desk
+              = image_tag('work/aiga-newsletter-august-16-desktop.jpg')
+            .mob
+              = image_tag('work/aiga-newsletter-august-16-mobile.jpg')

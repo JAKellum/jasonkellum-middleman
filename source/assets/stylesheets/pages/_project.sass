@@ -159,12 +159,29 @@ section.m-project-layout
         +rem(padding-top, 40px)
         +rem(padding-bottom, 40px)
         .item-text
-          +rem(padding-bottom, 40px)
-          margin: 0 auto
-          max-width: 60%
+          +span-columns(6)
+          +shift(3)
           text-align: center
+          +rem(padding-bottom, 40px)
+          +tablet
+            +span-columns(10)
+            +shift(1)
+          +mobile
+            +span-columns(12)
+            +shift(0)
+            text-align: left
+          select
+            margin-left: auto
+            margin-right: auto
+            +mobile
+              margin-left: inherit
+              margin-right: inherit
         .item-image
           +span-columns(6)
+          +tablet
+            +span-columns(5.5)
+            &:last-child
+              +shift(1)
           +mobile
             +span-columns(12)
           select
@@ -184,6 +201,14 @@ section.m-project-layout
             +tablet
               +span-columns(12)
               +shift(0)
+          .desk
+            display: inherit
+            +mobile
+              display: none
+          .mob
+            display: none
+            +mobile
+              display: inherit
           h5
             +rem(padding-bottom, 20px)
             text-align: center
